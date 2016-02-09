@@ -6,7 +6,7 @@ var helpers = require('yeoman-test');
 var assert = require('yeoman-assert');
 
 it('generates expected files', function (done) {
-  helpers.run(path.join(__dirname, './app'))
+  helpers.run(path.join(__dirname, './index.js'))
     .withOptions({ skipInstall: true })
     .withPrompts({
       moduleName: 'module',
